@@ -63,7 +63,7 @@ gdp_df = get_gdp_data()
 # Draw the actual page
 
 # Set the title that appears at the top of the page.
-st.write("Blemi")
+st.write("Heyyy My Lil Stinka Butt, This is the template for my app!")
 '''
 # Live Nine dashboard
 
