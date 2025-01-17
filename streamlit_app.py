@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import math
 from pathlib import Path
+import matplotlib.pyplot as plt
+from vega_datasets import data
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
@@ -63,7 +65,7 @@ gdp_df = get_gdp_data()
 # Draw the actual page
 
 # Set the title that appears at the top of the page.
-st.write("Heyyy My Lil Stinka Butt")
+st.write("Heyy My Lil Stinka Butt, im tryna make it baby")
 '''
 # Live Nine dashboard
 
@@ -150,3 +152,9 @@ for i, country in enumerate(selected_countries):
             delta=growth,
             delta_color=delta_color
         )
+
+st.header('Test Chart', divider='gray')
+
+source = data.barley()
+
+st.bar_chart(source, x="variety", y="yield", color="site", horizontal=True)
